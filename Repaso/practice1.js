@@ -12,3 +12,13 @@ let input = [
 const names = input
     .map(person => person.name);
 console.log(names);
+
+//por name y city
+
+const namesAndCities = input
+.map((person) => ({
+    name : person.name,
+    city : person.city
+}))
+
+console.log(namesAndCities)
